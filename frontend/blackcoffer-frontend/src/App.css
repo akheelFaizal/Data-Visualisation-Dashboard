@@ -1,0 +1,36 @@
+.hover-fun li:hover {
+  background: #a0a9a847;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 220px 220px 120px 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr ;
+  grid-template-areas:
+    "filter left top top top"
+    "filter left top top top"
+    "sec sec sec bottom right";
+    /* height: 100vh; */
+}
+
+.top{
+  grid-area: top;
+  /* background: #000; */
+}
+.bottom{
+  grid-area: bottom;
+  /* background: red; */
+}
+.filter{
+  grid-area: filter;
+}
+.left{
+  grid-area: left;
+}
+.sec{
+  grid-area: sec;
+}
+
+.right{
+  grid-area: right;
+}
+
